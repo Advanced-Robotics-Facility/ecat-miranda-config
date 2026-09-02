@@ -1,0 +1,33 @@
+definitions:
+  - &pos_ctrl_mode 0x3B
+  - &pos_3b_gains [200.0,0.0,10.0,0.0,0.0]
+
+yaw_1:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *pos_ctrl_mode
+  gains: *pos_3b_gains
+
+pitch_1:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *pos_ctrl_mode
+  gains: *pos_3b_gains
+
+yaw_2:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *pos_ctrl_mode
+  gains: *pos_3b_gains
+
+pitch_2:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *pos_ctrl_mode
+  gains: *pos_3b_gains
+
+yaw_3:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *pos_ctrl_mode
+  gains: *pos_3b_gains

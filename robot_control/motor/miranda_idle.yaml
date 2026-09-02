@@ -1,0 +1,27 @@
+definitions:
+  - &idle_ctrl_mode 0x00
+ 
+yaw_1:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *idle_ctrl_mode
+  
+pitch_1:
+  motor_type: ADVRF 
+  brake_present: true 
+  control_mode: *idle_ctrl_mode
+
+yaw_2:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *idle_ctrl_mode
+  
+pitch_2:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *idle_ctrl_mode
+
+yaw_3:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *idle_ctrl_mode

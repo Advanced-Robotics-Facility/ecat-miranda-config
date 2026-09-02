@@ -1,0 +1,11 @@
+trajectory:
+  type: sine #spline, smoother, step, sine, stair, chirp
+  frequency: 0.5
+  repeat: 50
+  
+motor:
+  config_path: ${PWD}/motor/robot_pos3b.yaml
+  id: [11, 12, 13, 14, 15]
+  set_point:  {position: 1.0, velocity: 2.0, torque: 10.0, current: 2} #rad,rad/s,Nm,A
+  homing:     [-0.6, -0.6, -0.6, -0.6, -0.6]
+  trajectory: [0.6, 0.6, 0.6, 0.6, 0.6]
