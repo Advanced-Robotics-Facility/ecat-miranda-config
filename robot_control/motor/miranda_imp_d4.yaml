@@ -31,3 +31,8 @@ pitch_3:
   motor_type: ADVRF 
   control_mode: *imp_ctrl_mode
   gains: *imp_d4_gains
+
+dagana:
+  motor_type: ADVRF 
+  control_mode: *imp_ctrl_mode
+  gains: *imp_d4_gains

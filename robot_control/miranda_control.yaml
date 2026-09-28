@@ -4,8 +4,8 @@ trajectory:
   repeat: 500
   
 motor:
-  config_path: ${PWD}/motor/miranda_imp_d4.yaml  # miranda_imp_d4.yaml
-  id: [11, 12, 13, 14, 15, 16] 
+  config_path: ${PWD}/motor/miranda_imp_d4.yaml  # miranda_pos_3b.yaml
+  id: [11, 12, 13, 14, 15, 16, 302] 
   set_point:  {position: 1.0, velocity: 2.0, torque: 10.0, current: 2} #rad,rad/s,Nm,A
-  homing: [-0.1, -0.2, -0.2, -0.1, -0.2, -0.3] 
-  trajectory: [0.3, 0.1, 0.3, 0.2, 0.2, 0.1]
+  homing: [-0.1, -0.2, -0.2, -0.1, -0.2, -0.3, 0.5] 
+  trajectory: [0.3, 0.1, 0.3, 0.2, 0.2, 0.1, -1.0]
