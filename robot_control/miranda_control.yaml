@@ -1,11 +1,21 @@
 trajectory:
   type: sine #spline, smoother, step, sine, stair, chirp
-  frequency: 0.5
+  frequency: 0.1
   repeat: 500
   
 motor:
-  config_path: ${PWD}/motor/miranda_imp_d4.yaml  # miranda_pos_3b.yaml
+  config_path: ${PWD}/motor/miranda_imp_d4.yaml  # miranda_pos_3b/miranda_imp_d4
   id: [11, 12, 13, 14, 15, 16, 302] 
   set_point:  {position: 1.0, velocity: 2.0, torque: 10.0, current: 2} #rad,rad/s,Nm,A
-  homing: [-0.1, -0.2, -0.2, -0.1, -0.2, -0.3, 0.5] 
-  trajectory: [0.3, 0.1, 0.3, 0.2, 0.2, 0.1, -1.0]
+  
+  # Configuration1 (position test)
+  # homing: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0]
+  # trajectory: [-0.4, 1.0, -0.7, -1.0, -0.7, 0.5, 0.4]
+ 
+  # Configuration2 (impedance test)
+  # homing: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0]
+  # trajectory: [0.0, 0.8, 0.0, -0.7, 0.0, 0.0, 0.4]
+ 
+  # Configuration3 (impedance test still)
+  homing: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  trajectory: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
