@@ -10,10 +10,10 @@ dds:
     depth: 1
 
 joint_map:
-  11: yaw_1
-  12: pitch_1
-  13: yaw_2
-  14: pitch_2
-  15: yaw_3
-  16: pitch_3
-  302: dagana
+  1: yaw_1
+  2: pitch_1
+  3: yaw_2
+  4: pitch_2
+  5: yaw_3
+  6: pitch_3
+  8: dagana
