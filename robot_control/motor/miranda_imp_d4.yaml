@@ -1,6 +1,6 @@
 definitions:
   - &imp_ctrl_mode 0xD4
-  - &imp_d4_gains [500.0,10.0,1.0,0.007,0.7]
+  - &imp_d4_gains [1000.0,10.0,1.0,0.007,0.7]
 
 yaw_1:
   motor_type: ADVRF 
