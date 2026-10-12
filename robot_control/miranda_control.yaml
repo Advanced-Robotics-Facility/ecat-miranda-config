@@ -1,6 +1,6 @@
 trajectory:
   type: sine #spline, smoother, step, sine, stair, chirp
-  frequency: 0.1
+  frequency: 0.3
   repeat: 500
   
 motor:
