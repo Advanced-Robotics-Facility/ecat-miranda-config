@@ -4,10 +4,12 @@ trajectory:
   repeat: 500
   
 motor:
-  config_path: ${PWD}/motor/miranda_imp_d4.yaml  # miranda_pos_3b/miranda_imp_d4
-  id: [11, 12, 13, 14, 15, 16, 302] 
+  config_path: ${ADVRF_CONFIG_ROOT}/robot_control/motor/miranda_pos_3b.yaml  # miranda_pos_3b/miranda_imp_d4
+  id: [1, 2, 3, 4, 5, 6] #[11, 12, 13, 14, 15, 16, 302] 
   set_point:  {position: 1.0, velocity: 2.0, torque: 10.0, current: 2} #rad,rad/s,Nm,A
-  
+  homing: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  trajectory: [-0.4, 1.0, -0.7, -1.0, -0.7, 0.5]
+
   # Configuration1 (position test)
   # homing: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0]
   # trajectory: [-0.4, 1.0, -0.7, -1.0, -0.7, 0.5, 0.4]
@@ -17,5 +19,5 @@ motor:
   # trajectory: [0.0, 0.8, 0.0, -0.7, 0.0, 0.0, 0.4]
  
   # Configuration3 (impedance test still)
-  homing: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-  trajectory: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  # homing: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  # trajectory: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]

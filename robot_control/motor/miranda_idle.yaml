@@ -25,3 +25,13 @@ yaw_3:
   motor_type: ADVRF 
   brake_present: true
   control_mode: *idle_ctrl_mode
+
+pitch_3:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *idle_ctrl_mode
+
+dagana:
+  motor_type: ADVRF 
+  brake_present: true
+  control_mode: *idle_ctrl_mode

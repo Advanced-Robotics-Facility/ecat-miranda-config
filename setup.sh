@@ -1,9 +1,15 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+export ADVRF_CONFIG_ROOT="$SCRIPT_DIR"
 
-export EC_CFG="$SCRIPT_DIR/ec_cfg.yaml"
-export ROBOT_MASTER_CONFIG="$SCRIPT_DIR/robot_ecat/ecat_config.yaml"
-export ROBOT_MASTER_CONFIG_UDP="$SCRIPT_DIR/robot_ecat/ecat_config_udp.yaml"
-#export ROS_PACKAGE_PATH=$SCRIPT_DIR:$ROS_PACKAGE_PATH
-#alias ecat_master="stdbuf --output=L --error=L repl -f $ECAT_MASTER_CONFIG 2>&1 | tee /tmp/ecat-output"
-alias robot_master="repl -f $ROBOT_MASTER_CONFIG"
-alias robot_master_gdb="gdb --args repl -f $ROBOT_MASTER_CONFIG"
+export EC_CFG="$ADVRF_CONFIG_ROOT/ec_cfg.yaml"
+export ROBOT_MASTER_CONFIG="$ADVRF_CONFIG_ROOT/robot_ecat/nrt_config.yaml"
+
+export MIDDLEWARE_CONFIG="$ADVRF_CONFIG_ROOT/middleware/config.yaml"
+
+export ROBOT_DESCRIPTION="$ADVRF_CONFIG_ROOT/ros2/urdf/miranda.urdf.xacro"
+export ROBOT_SRDF="$ADVRF_CONFIG_ROOT/ros2/srdf/miranda.srdf"
+export ROS2_CONTROLLERS="$ADVRF_CONFIG_ROOT/ros2/config/ros2_controllers.yaml"
+export MOVEIT_CONTROLLERS="$ADVRF_CONFIG_ROOT/ros2/config/moveit_controllers.yaml"
+
+alias robot_master='repl -f "$ROBOT_MASTER_CONFIG"'
+alias robot_master_gdb='gdb --args repl -f "$ROBOT_MASTER_CONFIG"'
