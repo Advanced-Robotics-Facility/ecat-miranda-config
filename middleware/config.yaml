@@ -16,7 +16,7 @@ joint_map:
   4: pitch_2
   5: yaw_3
   6: pitch_3
-  7: dagana
+  7: dagana_A_claw_joint
   # 11: yaw_1
   # 12: pitch_1
   # 13: yaw_2

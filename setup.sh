@@ -2,7 +2,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 export ADVRF_CONFIG_ROOT="$SCRIPT_DIR"
 
 export EC_CFG="$ADVRF_CONFIG_ROOT/ec_cfg.yaml"
-export ROBOT_MASTER_CONFIG="$ADVRF_CONFIG_ROOT/robot_ecat/nrt_config.yaml"
+export ROBOT_MASTER_CONFIG="$ADVRF_CONFIG_ROOT/robot_ecat/ecat_config.yaml"
 
 export MIDDLEWARE_CONFIG="$ADVRF_CONFIG_ROOT/middleware/config.yaml"
 
