@@ -32,10 +32,10 @@
         <joint name="yaw_2" value="-0.7"/>
         <joint name="yaw_3" value="-0.7"/>
     </group_state>
-    <group_state name="gripper_close" group="gripper">
+    <group_state name="gripper_open" group="gripper">
         <joint name="dagana_A_claw_joint" value="1.3"/>
     </group_state>
-    <group_state name="gripper_open" group="gripper">
+    <group_state name="gripper_close" group="gripper">
         <joint name="dagana_A_claw_joint" value="0"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
