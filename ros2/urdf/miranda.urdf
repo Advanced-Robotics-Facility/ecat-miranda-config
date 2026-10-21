@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <robot name="miranda">
-  <!-- Simplified cylinder geometry for visualization. Collision cylinders are approximate and are not validated safety envelopes. -->
+  <!-- ConCert visual meshes and their simplified collision counterparts are provided by concert_resources. -->
   <material name="blue">
     <color rgba="0 0 0.8 1" />
   </material>
@@ -39,16 +39,16 @@
   </joint>
   <link name="J1_A_stator">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0.11158" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.22316" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_yaw_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.11158" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.22316" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_yaw_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -66,16 +66,16 @@
   </joint>
   <link name="L_1_A">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0.01092" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.02184" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_yaw_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.01092" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.02184" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_yaw_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -92,16 +92,16 @@
   </joint>
   <link name="J2_A_stator">
     <visual>
-      <origin rpy="0 1.001287973 1.570796327" xyz="0 0.06833 0.04375" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.1622720111" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_elbow_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 1.001287973 1.570796327" xyz="0 0.06833 0.04375" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.1622720111" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_elbow_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -119,16 +119,16 @@
   </joint>
   <link name="L_2_A">
     <visual>
-      <origin rpy="0 1.35152242 -1.570796327" xyz="0 -0.04375 0.00975" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.0896465281" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_elbow_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 1.35152242 -1.570796327" xyz="0 -0.04375 0.00975" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.0896465281" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_elbow_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -145,16 +145,16 @@
   </joint>
   <link name="J3_A_stator">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0.11158" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.22316" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_yaw_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.11158" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.22316" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_yaw_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -172,16 +172,16 @@
   </joint>
   <link name="L_3_A">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0.01092" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.02184" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_yaw_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.01092" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.02184" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_yaw_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -198,16 +198,16 @@
   </joint>
   <link name="J4_A_stator">
     <visual>
-      <origin rpy="0 1.001287973 1.570796327" xyz="0 0.06833 0.04375" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.1622720111" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_elbow_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 1.001287973 1.570796327" xyz="0 0.06833 0.04375" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.1622720111" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_elbow_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -225,16 +225,16 @@
   </joint>
   <link name="L_4_A">
     <visual>
-      <origin rpy="0 1.35152242 -1.570796327" xyz="0 -0.04375 0.00975" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.0896465281" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_elbow_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 1.35152242 -1.570796327" xyz="0 -0.04375 0.00975" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.0896465281" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_elbow_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -251,16 +251,16 @@
   </joint>
   <link name="J5_A_stator">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0.11158" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.22316" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_yaw_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.11158" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.22316" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_yaw_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -278,16 +278,16 @@
   </joint>
   <link name="L_5_A">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0.01092" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.02184" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_yaw_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.01092" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.02184" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_yaw_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -304,16 +304,16 @@
   </joint>
   <link name="J6_A_stator">
     <visual>
-      <origin rpy="0 1.001287973 1.570796327" xyz="0 0.06833 0.04375" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.1622720111" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_elbow_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 1.001287973 1.570796327" xyz="0 0.06833 0.04375" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.045" length="0.1622720111" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_elbow_base.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -331,16 +331,16 @@
   </joint>
   <link name="L_6_A">
     <visual>
-      <origin rpy="0 1.35152242 -1.570796327" xyz="0 -0.04375 0.00975" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.0896465281" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/concert_elbow_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
     </visual>
     <collision>
-      <origin rpy="0 1.35152242 -1.570796327" xyz="0 -0.04375 0.00975" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.0896465281" />
+        <mesh filename="package://concert_resources/models/modular/meshes/concert/simple/concert_elbow_link.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
     <inertial>
@@ -367,16 +367,16 @@
       <inertia ixx="0.0050510328" ixy="-0.00025264216" ixz="-0.00012103013" iyy="0.0047944612" iyz="-0.00073917704" izz="0.0031156997" />
     </inertial>
     <visual>
-      <origin rpy="0 0.3217505544 -1.570796327" xyz="0 -0.025 0.075" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.158113883" />
+        <mesh filename="package://dagana_urdf/meshes/dg0001-simplified.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
+      <material name="dagana_dark_grey" />
     </visual>
     <collision>
-      <origin rpy="0 0.3217505544 -1.570796327" xyz="0 -0.025 0.075" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.035" length="0.158113883" />
+        <mesh filename="package://dagana_urdf/meshes/dg0001-simplified_v2.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
   </link>
@@ -394,16 +394,16 @@
       <inertia ixx="0.0014726990999999999" ixy="7.134683e-05" ixz="2.529065e-06" iyy="0.0009385556899999999" iyz="-0.000264452" izz="0.0019472731" />
     </inertial>
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0.035" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.015" length="0.07" />
+        <mesh filename="package://dagana_urdf/meshes/dg0002.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="gold"><color rgba="0.83 0.65 0.22 1" /></material>
+      <material name="dagana_dark_grey" />
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.035" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <cylinder radius="0.015" length="0.07" />
+        <mesh filename="package://dagana_urdf/meshes/dg0002-ch.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
   </link>
