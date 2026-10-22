@@ -12,6 +12,13 @@ general:
   logging: false
 
 robot:
-  robot_id_map_path: &robot_id_map_path '${ADVRF_CONFIG_ROOT}/robot_id_map/miranda_id_map.yaml'
-  robot_control_path: ${ADVRF_CONFIG_ROOT}/robot_control/miranda_control.yaml
+  robot_id_map_path: &robot_id_map_path '${PWD}/robot_id_map/miranda_id_map.yaml' 
+  robot_control_path: ${PWD}/robot_control/miranda_control.yaml
+  
+middleware:
+  folder: '${PWD}/middleware/'
+  
+ros2:
+  namespace: /advrf/miranda
+  folder:  '${PWD}/ros2/'
 

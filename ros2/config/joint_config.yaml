@@ -1,0 +1,14 @@
+/**:
+  ros__parameters:
+    joints:
+      - yaw_1
+      - pitch_1
+      - yaw_2
+      - pitch_2
+      - yaw_3
+      - pitch_3
+    position_lower: [-1.0, -1.0, -1.0, -1.0, -1.0, -1.0]
+    position_upper: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    max_velocity: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    max_acceleration: [5.0, 5.0, 5.0, 5.0, 5.0, 5.0]
+    command_durability: volatile
