@@ -32,7 +32,7 @@ pitch_3:
   control_mode: *pos_ctrl_mode
   gains: *pos_3b_gains
 
-dagana:
+dagana_A_claw_joint:
   motor_type: ADVRF 
   control_mode: *pos_ctrl_mode
   gains: *pos_3b_gains

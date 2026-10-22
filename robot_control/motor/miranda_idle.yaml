@@ -31,7 +31,7 @@ pitch_3:
   brake_present: true
   control_mode: *idle_ctrl_mode
 
-dagana:
+dagana_A_claw_joint:
   motor_type: ADVRF 
   brake_present: true
   control_mode: *idle_ctrl_mode
