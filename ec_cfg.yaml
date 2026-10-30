@@ -1,7 +1,7 @@
 network:
   #protocol: zipc
   #hostname: /tmp/ecat_master
-  
+
   protocol: iddp #tcp #iddp #udp
   hostname: localhost #10.240.23.30 #localhost #192.168.99.10 #192.168.9.99 #10.240.22.49
   port: 5000 #54321(UDP)
@@ -12,13 +12,20 @@ general:
   logging: false
 
 robot:
-  robot_id_map_path: &robot_id_map_path '${PWD}/robot_id_map/miranda_id_map.yaml' 
-  robot_control_path: ${PWD}/robot_control/miranda_control.yaml
-  
-middleware:
-  folder: '${PWD}/middleware/'
-  
+  robot_id_map_path: &robot_id_map_path '${ADVRF_CONFIG_ROOT}/robot_id_map/miranda_id_map.yaml'
+  robot_control_path: ${ADVRF_CONFIG_ROOT}/robot_control/miranda_control.yaml
+
 ros2:
   namespace: /advrf/miranda
-  folder:  '${PWD}/ros2/'
+  folder:  '${ADVRF_CONFIG_ROOT}/ros2/'
 
+# Native rclcpp bridge. Motors start only after a valid command is accepted.
+advrf_ros2_ecat:
+  node_name: advrf_ros2_ecat
+  domain: 42
+  period_ms: 5
+  read_only: false
+  auto_start: true
+  qos:
+    state: {reliability: best_effort, durability: volatile, depth: 10}
+    command: {reliability: best_effort, durability: volatile, depth: 1}
