@@ -32,4 +32,4 @@ device_list:
   TEST_MASK: 0x80000000
 
 device:
-  SYNAPTICON_v301: [11, 12, 13, 14, 15, 16, 302]
+  CENTAC_v15: [11, 12, 13, 14, 15, 16, 302]
